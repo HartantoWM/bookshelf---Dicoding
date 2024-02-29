@@ -32,13 +32,14 @@ function updateDataToStorage() {
         saveData();
 }
 
-function composebookObject(title, author, year, isCompleted) {
+function composebookObject(title, author, year, isComplete) {
+    year = parseInt(year);
     return {
         id: +new Date(),
         title,
         author,
         year,
-        isCompleted
+        isComplete
     };
 }
 
