@@ -97,7 +97,7 @@ function addBookToCompleted(bookElement) {
     const bookTitled = bookElement.querySelector(".book_item > h3").innerText;
     const bookAuthored = bookElement.querySelector(".book_item > p").innerText;
     const bookYeared = bookElement.querySelector(".year").innerText;
-    const bookIsComplete = bookElement.querySelector(".green").innerText;
+    const bookIsComplete = bookElement.querySelector(".btn-success").innerText;
 
     if (bookIsComplete == "Sudah selesai") {
         const newBook = makeBook(bookTitled, bookAuthored, bookYeared, true)
